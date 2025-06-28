@@ -9,7 +9,7 @@
     <div class="footer-bottom">
       <a href="https://github.com/OOM-WG" target="_blank" rel="noopener">GitHub</a>
       <span class="dot">·</span>
-      <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">MIT</a>
+      <a href="https://license.fileto.download" target="_blank" rel="noopener">F2DLPRL</a>
     </div>
   </footer>
 </template>
