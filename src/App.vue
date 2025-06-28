@@ -6,7 +6,7 @@ import YuanShen from './components/YuanShen.vue';
 
 <template>
   <div class="app-container">
-    <h1 class="main-title">WebUi Demo</h1>
+    <h1 class="main-title">WebUI Demo</h1>
     <SystemCards />
     <div>
       <YuanShen buttonText="原神 •启动" />
