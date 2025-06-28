@@ -9,7 +9,7 @@ import YuanShen from './components/YuanShen.vue';
     <h1 class="main-title">WebUI Demo</h1>
     <SystemCards />
     <div>
-      <YuanShen buttonText="原神 •启动" />
+      <YuanShen buttonText="原神 • 启动" />
     </div>
     <Footbar />
   </div>
