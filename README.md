@@ -4,7 +4,7 @@ SakitinSU WebUI 遵循 KernelSU 的 WebUI 标准，详细规范请参考 KernelS
 
 ## 目录结构规范
 
-项目目录建议如下：
+模块的目录结构如下：
 
 ```
 .
@@ -33,7 +33,7 @@ SakitinSU WebUI 遵循 KernelSU 的 WebUI 标准，详细规范请参考 KernelS
    ```sh
    pnpm dev
    ```
-3. 构建生产包（产物会输出到 `webroot/assets/`）：
+3. 构建生产包（产物会输出到 `dist`）：
    ```sh
    pnpm build
    ```
@@ -42,6 +42,5 @@ SakitinSU WebUI 遵循 KernelSU 的 WebUI 标准，详细规范请参考 KernelS
 
 - WebUI Demo 仓库: https://github.com/OOM-WG/WebUI_Demo
 - KernelSU 规范: https://kernelsu.org/zh/guide/webui.html
-
 ---
 
