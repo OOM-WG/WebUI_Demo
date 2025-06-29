@@ -10,10 +10,8 @@ SakitinSU WebUI 遵循 KernelSU 的 WebUI 标准，详细规范请参考 KernelS
 .
 ├── module.prop
 └── webroot
-    ├── index.html
-    └── assets
-        ├── style.css
-        └── app.js
+  ├── Web资源
+  ...
 ```
 
 - `webroot` 目录为 WebUI 的根目录，包含所有前端资源。
