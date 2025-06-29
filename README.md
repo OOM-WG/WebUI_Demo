@@ -1,17 +1,19 @@
 # SakitinSU WebUI
 
-SakitinSU WebUI 遵循 KernelSU 的 WebUI 标准，详细规范请参考 KernelSU WebUI 模块 Web 界面。
+SakitinSU 的 WebUI 标准与 KerenlSU 保持一致，详细规范请参考 [KerenlSU WebUI 模块 Web 界面](https://kernelsu.org/zh_CN/guide/module-webui.html)。
+
+除此之外，SakitinSU 的 WebUI JavaScript 接口的 `moduleInfo` 函数额外提供一个`updatable`值，此值会受到用户网络环境影响。
 
 ## 目录结构规范
 
 模块的目录结构如下：
 
-```
+``` tree
 .
 ├── module.prop
 └── webroot
-  ├── Web资源
-  ...
+  ├── index.html
+  └── 其他Web资源...
 ```
 
 - `webroot` 目录为 WebUI 的根目录，包含所有前端资源。
@@ -35,10 +37,3 @@ SakitinSU WebUI 遵循 KernelSU 的 WebUI 标准，详细规范请参考 KernelS
    ```sh
    pnpm build
    ```
-
-## 相关资源
-
-- WebUI Demo 仓库: https://github.com/OOM-WG/WebUI_Demo
-- KernelSU 规范: https://kernelsu.org/zh/guide/webui.html
----
-
