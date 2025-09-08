@@ -1,7 +1,7 @@
 <template>
   <footer class="footer-bar">
     <div class="footer-top">
-      © 2025  SakitinSU Build with
+      © 2025 SSU Build with
       <a href="https://vitejs.dev/" target="_blank" rel="noopener">Vite</a>
       <a>&</a>
       <a href="https://kernelsu.org/" target="_blank" rel="noopener">KernelSU</a>
