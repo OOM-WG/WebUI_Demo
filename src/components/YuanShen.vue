@@ -48,6 +48,6 @@ async function runExec() {
 	color: #666;
 	font-size: 14px;
 	word-break: break-all;
-	padding: 4px 0 0 0;
+	padding: 4px 0 0;
 }
 </style>
