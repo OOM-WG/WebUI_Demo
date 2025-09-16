@@ -1,22 +1,30 @@
 {
-  "name": "webui_demo",
-  "private": true,
-  "version": "0.0.1",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc -b && vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "kernelsu": "^1.0.6",
-    "vue": "^3.5.17"
-  },
-  "devDependencies": {
-    "@vitejs/plugin-vue": "^6.0.0",
-    "@vue/tsconfig": "^0.7.0",
-    "typescript": "~5.8.3",
-    "vite": "^7.0.0",
-    "vue-tsc": "^2.2.10"
-  }
+	"name": "webui_demo",
+	"description": "SSU Module WebUI Demo",
+	"author": "SSU Developers (O.O.M. W.G.)",
+	"license": "F2DLPRL",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vue-tsc -b && vite build",
+		"preview": "vite preview"
+	},
+	"dependencies": {
+		"kernelsu": "^1.0.6",
+		"vue": "^3.5.21"
+	},
+	"devDependencies": {
+		"@vitejs/plugin-vue": "^6.0.1",
+		"@vue/tsconfig": "^0.7.0",
+		"postcss-html": "^1.8.0",
+		"prettier": "^3.6.2",
+		"stylelint": "^16.24.0",
+		"stylelint-config-standard-scss": "^16.0.0",
+		"stylelint-config-standard-vue": "^1.0.0",
+		"stylelint-prettier": "^5.0.3",
+		"typescript": "~5.8.3",
+		"vite": "^7.1.5",
+		"vue-tsc": "^2.2.12"
+	}
 }
