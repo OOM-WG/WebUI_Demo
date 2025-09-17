@@ -21,7 +21,7 @@ fullScreen(true)
 <style>
 html,
 body {
-	height: 100%;
+	block-size: 100%;
 	overflow: hidden;
 	scrollbar-width: none;
 	-ms-overflow-style: none;
@@ -35,7 +35,7 @@ html::-webkit-scrollbar {
 
 <style scoped>
 .app-container {
-	min-height: 100vh;
+	min-block-size: 100vh;
 	background: #f5f5f5;
 	padding: 16px;
 }
@@ -60,7 +60,7 @@ html::-webkit-scrollbar {
 
 	.main-title {
 		font-size: 16px;
-		margin-bottom: 16px;
+		margin-block-end: 16px;
 	}
 }
 </style>

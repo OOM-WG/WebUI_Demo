@@ -24,7 +24,7 @@ async function runExec() {
 
 <style scoped>
 .card-title-button {
-	width: 100%;
+	inline-size: 100%;
 	background: #fff;
 	border-radius: 16px;
 	padding: 16px 0;
@@ -36,7 +36,7 @@ async function runExec() {
 	box-shadow: none;
 	text-align: center;
 	transition: background 0.15s;
-	margin-bottom: 12px;
+	margin-block-end: 12px;
 	outline: none;
 }
 

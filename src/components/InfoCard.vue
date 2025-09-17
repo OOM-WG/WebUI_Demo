@@ -31,7 +31,7 @@ defineProps<Props>()
 
 <style scoped>
 .card-wrapper {
-	margin-bottom: 24px;
+	margin-block-end: 24px;
 }
 
 .card-title {
@@ -39,8 +39,8 @@ defineProps<Props>()
 	font-weight: 400;
 	color: #999;
 	margin: 0 0 12px;
-	text-align: left;
-	padding-left: 8px;
+	text-align: start;
+	padding-inline-start: 8px;
 }
 
 .info-card {
@@ -62,19 +62,19 @@ defineProps<Props>()
 	justify-content: space-between;
 	align-items: center;
 	padding: 12px 0;
-	min-height: 40px;
-	width: 100%;
+	min-block-size: 40px;
+	inline-size: 100%;
 }
 
 .info-row:last-child {
-	border-bottom: none;
+	border-block-end: none;
 }
 
 .info-row .label {
 	font-size: 14px;
 	font-weight: 600;
 	color: #333;
-	text-align: left;
+	text-align: start;
 	flex-shrink: 0;
 }
 
@@ -82,9 +82,9 @@ defineProps<Props>()
 	font-size: 14px;
 	color: #666;
 	font-weight: 400;
-	text-align: right;
+	text-align: end;
 	overflow-wrap: break-word;
 	flex-shrink: 1;
-	margin-left: 16px;
+	margin-inline-start: 16px;
 }
 </style>

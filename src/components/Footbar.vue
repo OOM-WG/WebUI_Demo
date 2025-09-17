@@ -16,7 +16,7 @@
 
 <style scoped>
 .footer-bar {
-	width: 100%;
+	inline-size: 100%;
 	padding: 16px 0 12px;
 	color: #888;
 	font-size: 14px;
@@ -32,11 +32,11 @@
 	align-items: center;
 	flex-wrap: wrap;
 	gap: 8px;
-	margin-bottom: 4px;
+	margin-block-end: 4px;
 }
 
 .footer-bottom {
-	margin-bottom: 0;
+	margin-block-end: 0;
 }
 
 .footer-bar a {
