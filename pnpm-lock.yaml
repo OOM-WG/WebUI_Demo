@@ -17,7 +17,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.1(vite@7.1.5)(vue@3.5.21(typescript@5.8.3))
+        version: 6.0.1(vite@7.1.6)(vue@3.5.21(typescript@5.8.3))
       '@vue/tsconfig':
         specifier: ^0.7.0
         version: 0.7.0(typescript@5.8.3)(vue@3.5.21(typescript@5.8.3))
@@ -55,8 +55,8 @@ importers:
         specifier: ~5.8.3
         version: 5.8.3
       vite:
-        specifier: ^7.1.5
-        version: 7.1.5
+        specifier: ^7.1.6
+        version: 7.1.6
       vue-tsc:
         specifier: ^2.2.12
         version: 2.2.12(typescript@5.8.3)
@@ -278,8 +278,8 @@ packages:
   '@jridgewell/sourcemap-codec@1.5.5':
     resolution: {integrity: sha512-cYQ9310grqxueWbl+WuIUIaiUaDcj7WOq5fVhEljNVgRfOUhY9fy2zTvfoqWsnebh8Sl70VScFbICvJnLKB0Og==}
 
-  '@keyv/bigmap@1.0.0':
-    resolution: {integrity: sha512-N2UsRSXlWwbvYKdFVS7sKqj6oXGegELh+zr9VripWDc8grsq8KBNp8JHI+9AQuUEFiM1S7+tm6lLp/lmbBCqCw==}
+  '@keyv/bigmap@1.0.1':
+    resolution: {integrity: sha512-dZ7TMshK6brpuGPPRoq4pHNzNH4KTWaxVPB7KEnPErlgJpc+jG1Oyx3sw6nBFiZ0OCKwC1zU6skMEG7H421f9g==}
     engines: {node: '>= 20'}
 
   '@keyv/serialize@1.1.1':
@@ -614,8 +614,8 @@ packages:
   domutils@3.2.2:
     resolution: {integrity: sha512-6kZKyUajlDuqlHKVX1w7gyslj9MPIXzIFiz/rGu35uC1wMi+kMhQwGhl4lt9unC9Vb9INnY9Z3/ZA3+FhASLaw==}
 
-  electron-to-chromium@1.5.220:
-    resolution: {integrity: sha512-TWXijEwR1ggr4BdAKrb1nMNqYLTx1/4aD1fkeZU+FVJGTKu53/T7UyHKXlqEX3Ub02csyHePbHmkvnrjcaYzMA==}
+  electron-to-chromium@1.5.221:
+    resolution: {integrity: sha512-/1hFJ39wkW01ogqSyYoA4goOXOtMRy6B+yvA1u42nnsEGtHzIzmk93aPISumVQeblj47JUHLC9coCjUxb1EvtQ==}
 
   emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
@@ -794,8 +794,8 @@ packages:
   kernelsu@1.0.6:
     resolution: {integrity: sha512-f4/G9rYKJSQG2LGal/PJIDFY4ytbKxg6d6N4YuIDBX92JLve9WJ36Mmkws7H+laO4yd4mpNM+jrzU1lrXDGWAA==}
 
-  keyv@5.5.1:
-    resolution: {integrity: sha512-eF3cHZ40bVsjdlRi/RvKAuB0+B61Q1xWvohnrJrnaQslM3h1n79IV+mc9EGag4nrA9ZOlNyr3TUzW5c8uy8vNA==}
+  keyv@5.5.2:
+    resolution: {integrity: sha512-TXcFHbmm/z7MGd1u9ASiCSfTS+ei6Z8B3a5JHzx3oPa/o7QzWVtPRpc4KGER5RR469IC+/nfg4U5YLIuDUua2g==}
 
   kind-of@6.0.3:
     resolution: {integrity: sha512-dcS1ul+9tmeD95T+x28/ehLgd9mENa3LsvDTtzm3vyBEO7RPptvAD+t44WVXaUjTBRcrpFeFlC8WCruUR456hw==}
@@ -1113,8 +1113,8 @@ packages:
   util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
 
-  vite@7.1.5:
-    resolution: {integrity: sha512-4cKBO9wR75r0BeIWWWId9XK9Lj6La5X846Zw9dFfzMRw38IlTk2iCcUt6hsyiDRcPidc55ZParFYDXi0nXOeLQ==}
+  vite@7.1.6:
+    resolution: {integrity: sha512-SRYIB8t/isTwNn8vMB3MR6E+EQZM/WG1aKmmIUCfDXfVvKfc20ZpamngWHKzAmmu9ppsgxsg4b2I7c90JZudIQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
     peerDependencies:
@@ -1207,9 +1207,9 @@ snapshots:
     dependencies:
       '@cacheable/memoize': 2.0.1
       '@cacheable/utils': 2.0.1
-      '@keyv/bigmap': 1.0.0
+      '@keyv/bigmap': 1.0.1
       hookified: 1.12.0
-      keyv: 5.5.1
+      keyv: 5.5.2
 
   '@cacheable/utils@2.0.1': {}
 
@@ -1310,7 +1310,7 @@ snapshots:
 
   '@jridgewell/sourcemap-codec@1.5.5': {}
 
-  '@keyv/bigmap@1.0.0':
+  '@keyv/bigmap@1.0.1':
     dependencies:
       hookified: 1.12.0
 
@@ -1395,10 +1395,10 @@ snapshots:
 
   '@types/estree@1.0.8': {}
 
-  '@vitejs/plugin-vue@6.0.1(vite@7.1.5)(vue@3.5.21(typescript@5.8.3))':
+  '@vitejs/plugin-vue@6.0.1(vite@7.1.6)(vue@3.5.21(typescript@5.8.3))':
     dependencies:
       '@rolldown/pluginutils': 1.0.0-beta.29
-      vite: 7.1.5
+      vite: 7.1.6
       vue: 3.5.21(typescript@5.8.3)
 
   '@volar/language-core@2.4.15':
@@ -1539,7 +1539,7 @@ snapshots:
     dependencies:
       baseline-browser-mapping: 2.8.5
       caniuse-lite: 1.0.30001743
-      electron-to-chromium: 1.5.220
+      electron-to-chromium: 1.5.221
       node-releases: 2.0.21
       update-browserslist-db: 1.1.3(browserslist@4.26.2)
 
@@ -1549,7 +1549,7 @@ snapshots:
       '@cacheable/memory': 2.0.1
       '@cacheable/utils': 2.0.1
       hookified: 1.12.0
-      keyv: 5.5.1
+      keyv: 5.5.2
 
   callsites@3.1.0: {}
 
@@ -1611,7 +1611,7 @@ snapshots:
       domelementtype: 2.3.0
       domhandler: 5.0.3
 
-  electron-to-chromium@1.5.220: {}
+  electron-to-chromium@1.5.221: {}
 
   emoji-regex@8.0.0: {}
 
@@ -1784,7 +1784,7 @@ snapshots:
 
   kernelsu@1.0.6: {}
 
-  keyv@5.5.1:
+  keyv@5.5.2:
     dependencies:
       '@keyv/serialize': 1.1.1
 
@@ -2116,7 +2116,7 @@ snapshots:
 
   util-deprecate@1.0.2: {}
 
-  vite@7.1.5:
+  vite@7.1.6:
     dependencies:
       esbuild: 0.25.10
       fdir: 6.5.0(picomatch@4.0.3)
