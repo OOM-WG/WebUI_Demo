@@ -9,3 +9,7 @@ ij_continuation_indent_size = 8
 [{*.yml,*.yaml}]
 indent_size = 2
 indent_style = space
+
+[{*.md,*.mkd}]
+indent_size = 2
+indent_style = space
