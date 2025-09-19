@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import {ref, onMounted} from 'vue'
 import {exec} from 'kernelsu'
+import {onMounted, ref} from 'vue'
+
 import InfoCard from './InfoCard.vue'
 
 const systemInfo = ref([

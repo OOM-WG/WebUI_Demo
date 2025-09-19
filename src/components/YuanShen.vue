@@ -5,7 +5,7 @@
 </template>
 
 <script setup lang="ts">
-import {toast, exec} from 'kernelsu'
+import {exec, toast} from 'kernelsu'
 
 defineProps<{
 	buttonText: string
