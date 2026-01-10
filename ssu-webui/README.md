@@ -19,7 +19,8 @@ ShiroSU 的 WebUI 标准与 KerenlSU 保持一致，详细规范请参考 [**Ker
 
 ## 开发与构建
 
-本项目基于 [Vue 3](https://vuejs.org/) + [TypeScript](https://www.typescriptlang.org/) + [Vite](https://vitejs.dev/) 开发，集成了 KernelSU 包，便于快速开发和打包
+本项目基于 [Vue 3](https://vuejs.org/) + [TypeScript](https://www.typescriptlang.org/) + [Vite](https://vitejs.dev/) 开发，
+集成了 [KernelSU](https://www.npmjs.com/package/kernelsu) 包，便于快速开发和打包
 
 ## 快速开始
 
