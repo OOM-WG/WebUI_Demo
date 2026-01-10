@@ -1,6 +1,6 @@
-# [ShiroSU WebUI](https://ssu.oom-wg.dev/dev/webui)
+# [ShiroSU WebUI](https://oom-wg.dev/ssu/dev/man/webui)
 
-ShiroSU 的 WebUI 标准与 KerenlSU 保持一致，详细规范请参考 [KerenlSU 模块 WebUI](https://kernelsu.org/zh_CN/guide/module-webui.html)
+ShiroSU 的 WebUI 标准与 KerenlSU 保持一致，详细规范请参考 [**KerenlSU 规范**](https://kernelsu.org/zh_CN/guide/module-webui.html)
 
 ## 目录结构规范
 
