@@ -1,9 +1,9 @@
 {
-	"name": "webui_demo",
+	"name": "ssu-webui",
 	"private": true,
 	"description": "SSU Module WebUI Demo",
 	"license": "F2DLPRL",
-	"author": "SSU Developers (O.O.M. W.G.)",
+	"author": "SSU Developers (OOM WG)",
 	"type": "module",
 	"scripts": {
 		"build": "vue-tsc -b && vite build",
@@ -12,26 +12,26 @@
 		"preview": "vite preview"
 	},
 	"dependencies": {
-		"kernelsu": "^1.0.6",
-		"vue": "^3.5.21"
+		"kernelsu": "^3.0.0",
+		"vue": "^3.5.26"
 	},
 	"devDependencies": {
-		"@trivago/prettier-plugin-sort-imports": "^5.2.2",
-		"@vitejs/plugin-vue": "^6.0.1",
-		"@vue/compiler-sfc": "^3.5.21",
-		"@vue/tsconfig": "^0.7.0",
-		"autoprefixer": "^10.4.21",
+		"@trivago/prettier-plugin-sort-imports": "^6.0.2",
+		"@vitejs/plugin-vue": "^6.0.3",
+		"@vue/compiler-sfc": "^3.5.26",
+		"@vue/tsconfig": "^0.8.1",
+		"autoprefixer": "^10.4.23",
 		"postcss": "^8.5.6",
 		"postcss-html": "^1.8.0",
-		"prettier": "^3.6.2",
-		"stylelint": "^16.24.0",
+		"prettier": "^3.7.4",
+		"stylelint": "^16.26.1",
 		"stylelint-config-standard-scss": "^16.0.0",
 		"stylelint-config-standard-vue": "^1.0.0",
 		"stylelint-plugin-defensive-css": "^1.0.4",
 		"stylelint-plugin-logical-css": "^1.2.3",
 		"stylelint-prettier": "^5.0.3",
-		"typescript": "~5.8.3",
-		"vite": "^7.1.6",
-		"vue-tsc": "^2.2.12"
+		"typescript": "~5.9.3",
+		"vite": "^7.3.1",
+		"vue-tsc": "^3.2.2"
 	}
 }
