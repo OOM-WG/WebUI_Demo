@@ -9,6 +9,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.window.ComposeViewport
 import dev.oom_wg.purejoy.fyl.fytxt.FYTxt
 import dev.oom_wg.purejoy.fyl.fytxt.FYTxtConfig
+import dev.oom_wg.purejoy.fyl.fytxt.compose.FYTxtProvider
 import top.yukonga.miuix.kmp.basic.*
 import top.yukonga.miuix.kmp.extra.SuperDropdown
 import top.yukonga.miuix.kmp.extra.SuperSwitch
@@ -64,6 +65,6 @@ fun AppTheme(content: @Composable () -> Unit) {
 fun main() {
 	FYTxtConfig.updateGroup(FYTxt.FYTxtGroups.Common)
 	ComposeViewport {
-		AppTheme { App() }
+		FYTxtProvider { AppTheme { App() } }
 	}
 }

@@ -47,11 +47,14 @@ dependencyResolutionManagement {
 }
 
 plugins {
-	id("org.jetbrains.kotlin.multiplatform") version "+" apply false
-	id("org.jetbrains.kotlin.plugin.compose") version "+" apply false
+	// noinspection GradleDynamicVersion,AndroidGradlePluginVersion
+	id("com.android.application") version "8.12.0" apply false
+	kotlin("android") version "+" apply false
+	kotlin("multiplatform") version "+" apply false
+	kotlin("plugin.compose") version "+" apply false
 	id("org.jetbrains.compose") version "+" apply false
 
 	id("dev.oom-wg.purejoy.fyl.fytxt") version "+" apply false
 }
 
-include(":app", ":exe")
+include(":app", ":exe", ":test")
