@@ -1,4 +1,4 @@
-# [FYTxt 示例](https://app.niggergo.work/docs/purejoy/fytxt)
+# [FYTxt 示例](https://app.niggergo.work/purejoy/fytxt)
 
 本示例的内容包括 _Compose UI_ 与 _CLI 命令行_ 的多语言示例
 
