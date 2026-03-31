@@ -13,25 +13,25 @@
 	},
 	"dependencies": {
 		"kernelsu": "^3.0.2",
-		"vue": "^3.5.30"
+		"vue": "^3.5.31"
 	},
 	"devDependencies": {
 		"@trivago/prettier-plugin-sort-imports": "^6.0.2",
-		"@vitejs/plugin-vue": "^6.0.4",
-		"@vue/compiler-sfc": "^3.5.30",
-		"@vue/tsconfig": "^0.9.0",
+		"@vitejs/plugin-vue": "^6.0.5",
+		"@vue/compiler-sfc": "^3.5.31",
+		"@vue/tsconfig": "^0.9.1",
 		"autoprefixer": "^10.4.27",
 		"postcss": "^8.5.8",
 		"postcss-html": "^1.8.1",
 		"prettier": "^3.8.1",
-		"stylelint": "^17.4.0",
+		"stylelint": "^17.6.0",
 		"stylelint-config-standard-scss": "^17.0.0",
 		"stylelint-config-standard-vue": "^1.0.0",
-		"stylelint-plugin-defensive-css": "^2.6.0",
-		"stylelint-plugin-logical-css": "^2.0.2",
+		"stylelint-plugin-defensive-css": "^2.8.0",
+		"stylelint-plugin-logical-css": "^2.1.0",
 		"stylelint-prettier": "^5.0.3",
-		"typescript": "~5.9.3",
-		"vite": "^7.3.1",
-		"vue-tsc": "^3.2.5"
+		"typescript": "~6.0.2",
+		"vite": "^8.0.3",
+		"vue-tsc": "^3.2.6"
 	}
 }
