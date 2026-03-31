@@ -13,8 +13,7 @@ fun main(args: Array<String>) = runBlocking {
 		"${FYTxt.翻译率}: ${
 		FYTxt.FYTxtGroups.entries.joinToString("\n") {
 			"${it.name}:  ${
-				it.stats.map { (tag, stat) -> "$tag: ${(stat * 1000).toInt() / 10.0}%" }
-					.joinToString(", ")
+				it.stats.map { (tag, stat) -> "$tag: ${(stat * 1000).toInt() / 10.0}%" }.joinToString(", ")
 			}"
 		}
 	}")

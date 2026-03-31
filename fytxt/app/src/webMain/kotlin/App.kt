@@ -31,17 +31,12 @@ fun App() {
 				var selectedIndex by mutableStateOf((activeGroup as FYTxt.FYTxtGroups).ordinal)
 				val options = FYTxt.FYTxtGroups.entries.map { it.name }
 				SuperDropdown(
-					title = FYTxt.当前语言组(),
-					items = options,
-					selectedIndex = selectedIndex,
-					onSelectedIndexChange = {
+					title = FYTxt.当前语言组(), items = options, selectedIndex = selectedIndex, onSelectedIndexChange = {
 						selectedIndex = it
 						FYTxtConfig.updateGroup(FYTxt.FYTxtGroups.entries[selectedIndex])
 					})
 				SuperSwitch(
-					title = FYTxt.自动更新锁(),
-					checked = lock,
-					onCheckedChange = { FYTxtConfig.updateTags(lock = it) })
+					title = FYTxt.自动更新锁(), checked = lock, onCheckedChange = { FYTxtConfig.updateTags(lock = it) })
 				BasicComponent(
 					title = FYTxt.翻译率(), summary = FYTxt.FYTxtGroups.entries.joinToString("\n") {
 						"${it.name}:  ${

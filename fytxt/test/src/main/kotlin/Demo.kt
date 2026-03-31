@@ -28,16 +28,13 @@ class Demo : ComponentActivity() {
 	override fun onCreate(savedInstanceState: Bundle?) = super.onCreate(savedInstanceState).also {
 		Hikageable(this) {
 			LinearLayout(
-				lparams = LayoutParams(matchParent = true),
-				init = { orientation = LinearLayout.VERTICAL }) {
+				lparams = LayoutParams(matchParent = true), init = { orientation = LinearLayout.VERTICAL }) {
 				val nativeResult = hikageStateOf("Native: Waiting...")
 				val fytxtResult = hikageStateOf("FYTxt: Waiting...")
-				LinearLayout(
-					lparams = LayoutParams(widthMatchParent = true, height = 0) { weight = 1f },
-					init = {
-						orientation = LinearLayout.VERTICAL
-						gravity = Gravity.CENTER
-					}) {
+				LinearLayout(lparams = LayoutParams(widthMatchParent = true, height = 0) { weight = 1f }, init = {
+					orientation = LinearLayout.VERTICAL
+					gravity = Gravity.CENTER
+				}) {
 					TextView {
 						textSize = 20f
 						setState(nativeResult) { text = it }

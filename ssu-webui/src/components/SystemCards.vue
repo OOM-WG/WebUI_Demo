@@ -44,8 +44,7 @@ onMounted(async () => {
 	}
 	const encrypt = await exec('getprop ro.crypto.state')
 	if (encrypt.errno === 0 && encrypt.stdout.trim()) {
-		securityInfo.value[2].value =
-			encrypt.stdout.trim() === 'encrypted' ? '已加密' : encrypt.stdout.trim()
+		securityInfo.value[2].value = encrypt.stdout.trim() === 'encrypted' ? '已加密' : encrypt.stdout.trim()
 	}
 })
 </script>
