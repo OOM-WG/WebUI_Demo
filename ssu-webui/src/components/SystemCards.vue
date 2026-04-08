@@ -1,20 +1,20 @@
 <script setup lang="ts">
-import {exec} from 'kernelsu'
-import {onMounted, ref} from 'vue'
+import { exec } from 'kernelsu'
+import { onMounted, ref } from 'vue'
 
 import InfoCard from './InfoCard.vue'
 
 const systemInfo = ref([
-	{label: '系统架构', value: '获取中...'},
-	{label: 'Android版本', value: '获取中...'},
-	{label: 'Android SDK', value: '获取中...'},
-	{label: '内核版本', value: '获取中...'}
+	{ label: '系统架构', value: '获取中...' },
+	{ label: 'Android版本', value: '获取中...' },
+	{ label: 'Android SDK', value: '获取中...' },
+	{ label: '内核版本', value: '获取中...' },
 ])
 
 const securityInfo = ref([
-	{label: '安全补丁', value: '获取中...'},
-	{label: '开发者模式', value: '获取中...'},
-	{label: '数据加密', value: '获取中...'}
+	{ label: '安全补丁', value: '获取中...' },
+	{ label: '开发者模式', value: '获取中...' },
+	{ label: '数据加密', value: '获取中...' },
 ])
 
 onMounted(async () => {

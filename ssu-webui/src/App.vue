@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {fullScreen} from 'kernelsu'
+import { fullScreen } from 'kernelsu'
 
 import Footbar from './components/Footbar.vue'
 import SystemCards from './components/SystemCards.vue'

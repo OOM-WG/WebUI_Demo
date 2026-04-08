@@ -1,1 +1,1 @@
-{"stylelint.validate": ["css", "scss", "postcss", "vue"], "stylelint.packageManager": "pnpm"}
+{ "stylelint.validate": ["css", "scss", "postcss", "vue"], "stylelint.packageManager": "pnpm" }
