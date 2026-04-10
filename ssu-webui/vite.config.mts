@@ -8,7 +8,7 @@ export default defineConfig({
 	plugins: [vue()],
 	css: {
 		postcss: {
-			plugins: [autoprefixer()],
-		},
-	},
+			plugins: [autoprefixer()]
+		}
+	}
 })
