@@ -1,7 +1,6 @@
 @file:Suppress("UnstableApiUsage")
 
 rootProject.name = "FYTxt-Demo"
-enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 pluginManagement {
 	repositories {
@@ -14,16 +13,17 @@ pluginManagement {
 				includeGroupAndSubgroups("com.google")
 			}
 		}
-		maven("https://oom-maven.sawahara.host") {
+		maven("https://maven.oom-wg.dev") {
 			content {
-				includeGroupByRegex("ren\\.shiror.*")
-				includeGroupByRegex("dev\\.oom-wg.*")
+				includeGroupAndSubgroups("ren.shiror")
+				includeGroupAndSubgroups("sbs.fvvlang")
+				includeGroupAndSubgroups("dev.oom-wg")
+				includeGroupAndSubgroups("dev.oom_wg")
 			}
 		}
 		gradlePluginPortal()
 	}
 }
-
 dependencyResolutionManagement {
 	repositories {
 		mavenLocal()
@@ -36,20 +36,22 @@ dependencyResolutionManagement {
 				includeGroupAndSubgroups("com.google")
 			}
 		}
-		maven("https://oom-maven.sawahara.host") {
+		maven("https://maven.oom-wg.dev") {
 			content {
-				includeGroupByRegex("ren\\.shiror.*")
-				includeGroupByRegex("dev\\.oom-wg.*")
+				includeGroupAndSubgroups("ren.shiror")
+				includeGroupAndSubgroups("sbs.fvvlang")
+				includeGroupAndSubgroups("dev.oom-wg")
+				includeGroupAndSubgroups("dev.oom_wg")
 			}
 		}
 		gradlePluginPortal()
 	}
 }
 
+// noinspection GradleDynamicVersion
 plugins {
-	// noinspection GradleDynamicVersion,AndroidGradlePluginVersion
-	id("com.android.application") version "8.12.0" apply false
-	kotlin("android") version "+" apply false
+	// AndroidGradlePluginVersion
+	id("com.android.application") version "9.0.0-alpha06" apply false
 	kotlin("multiplatform") version "+" apply false
 	kotlin("plugin.compose") version "+" apply false
 	id("org.jetbrains.compose") version "+" apply false

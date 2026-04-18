@@ -7,8 +7,7 @@ import androidx.compose.ui.ExperimentalComposeUiApi
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.window.ComposeViewport
-import dev.oom_wg.purejoy.fyl.fytxt.FYTxt
-import dev.oom_wg.purejoy.fyl.fytxt.FYTxtConfig
+import dev.oom_wg.purejoy.fyl.fytxt.*
 import dev.oom_wg.purejoy.fyl.fytxt.compose.FYTxtProvider
 import top.yukonga.miuix.kmp.basic.*
 import top.yukonga.miuix.kmp.extra.SuperDropdown
@@ -28,17 +27,17 @@ fun App() {
 				BasicComponent(title = FYTxt.Text())
 				BasicComponent(title = FYTxt.已知语言(), summary = locTags.joinToString(", "))
 				BasicComponent(title = FYTxt.可用语言(), summary = activeTags.joinToString(", "))
-				var selectedIndex by mutableStateOf((activeGroup as FYTxt.FYTxtGroups).ordinal)
-				val options = FYTxt.FYTxtGroups.entries.map { it.name }
+				var selectedIndex by mutableStateOf((activeGroup as FYTxtGroups).ordinal)
+				val options = FYTxtGroups.entries.map { it.name }
 				SuperDropdown(
 					title = FYTxt.当前语言组(), items = options, selectedIndex = selectedIndex, onSelectedIndexChange = {
 						selectedIndex = it
-						FYTxtConfig.updateGroup(FYTxt.FYTxtGroups.entries[selectedIndex])
+						FYTxtConfig.updateGroup(FYTxtGroups.entries[selectedIndex])
 					})
 				SuperSwitch(
 					title = FYTxt.自动更新锁(), checked = lock, onCheckedChange = { FYTxtConfig.updateTags(lock = it) })
 				BasicComponent(
-					title = FYTxt.翻译率(), summary = FYTxt.FYTxtGroups.entries.joinToString("\n") {
+					title = FYTxt.翻译率(), summary = FYTxtGroups.entries.joinToString("\n") {
 						"${it.name}:  ${
 							it.stats.map { (tag, stat) ->
 								"$tag: ${(stat * 1000).toInt() / 10.0}%"
@@ -58,8 +57,6 @@ fun AppTheme(content: @Composable () -> Unit) {
 
 @OptIn(ExperimentalComposeUiApi::class)
 fun main() {
-	FYTxtConfig.updateGroup(FYTxt.FYTxtGroups.Common)
-	ComposeViewport {
-		FYTxtProvider { AppTheme { App() } }
-	}
+	FYTxtConfig.updateGroup(FYTxtGroups.Common)
+	ComposeViewport { FYTxtProvider { AppTheme { App() } } }
 }

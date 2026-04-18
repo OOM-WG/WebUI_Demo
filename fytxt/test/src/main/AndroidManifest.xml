@@ -1,8 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-		  xmlns:tools="http://schemas.android.com/tools">
-	<application
-			android:label="Demo"
-			tools:targetApi="36">
+          xmlns:tools="http://schemas.android.com/tools">
+	<application android:label="Demo">
 		<activity
 				android:name="dev.oom_wg.demo.Demo"
 				android:theme="@android:style/Theme"

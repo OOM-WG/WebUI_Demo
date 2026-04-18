@@ -9,11 +9,8 @@ fytxt {
 		"Common" to layout.projectDirectory.dir("../gradle/lang/common"),
 		"Meow" to layout.projectDirectory.dir("../gradle/lang/meow")
 	)
-	langAliases = mapOf(
-		"ZH_CN" to "^ZH_.*(HANS|CN|SG)", "ZH" to "^ZH_(?!.*(HANS|CN|SG)).*"
-	)
+	langAliases = mapOf("ZH_CN" to "^ZH_.*(HANS|CN|SG)", "ZH" to "^ZH_(?!.*(HANS|CN|SG)).*")
 	defaultLang = "ZH_CN"
-	internalClass = false
 }
 
 kotlin {

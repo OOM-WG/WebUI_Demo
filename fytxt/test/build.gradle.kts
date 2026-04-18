@@ -4,7 +4,6 @@ import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 plugins {
 	id("com.android.application")
-	kotlin("android")
 	kotlin("plugin.compose")
 
 	id("org.lsposed.lsplugin.resopt") version "+"
@@ -17,12 +16,9 @@ fytxt {
 		"Common" to layout.projectDirectory.dir("../gradle/lang/common"),
 		"Meow" to layout.projectDirectory.dir("../gradle/lang/meow")
 	)
-	langAliases = mapOf(
-		"ZH_CN" to "^ZH_.*(HANS|CN|SG)", "ZH" to "^ZH_(?!.*(HANS|CN|SG)).*"
-	)
+	langAliases = mapOf("ZH_CN" to "^ZH_.*(HANS|CN|SG)", "ZH" to "^ZH_(?!.*(HANS|CN|SG)).*")
 	defaultLang = "ZH_CN"
 	composeGen = true
-	internalClass = false
 }
 
 composeCompiler.includeComposeMappingFile = false
@@ -31,13 +27,13 @@ kotlin.compilerOptions.jvmTarget = JvmTarget.JVM_25
 
 android {
 	namespace = "dev.oom_wg.demo"
-	compileSdk = 36
-	buildToolsVersion = "36.1.0"
+	compileSdk = 37
+	buildToolsVersion = "37.0.0"
 
 	defaultConfig {
 		applicationId = "dev.oom_wg.demo"
 		minSdk = 24
-		targetSdk = 36
+		targetSdk = 37
 	}
 	buildTypes {
 		release {

@@ -5,7 +5,6 @@ package dev.oom_wg.demo
 import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.Gravity
-import android.widget.LinearLayout
 import androidx.activity.ComponentActivity
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*
@@ -20,7 +19,9 @@ import com.highcapable.hikage.extension.androidx.compose.ComposeView
 import com.highcapable.hikage.widget.android.widget.*
 import dev.oom_wg.purejoy.fyl.fytxt.*
 import dev.oom_wg.purejoy.fyl.fytxt.compose.FYTxtProvider
+import dev.oom_wg.purejoy.fyl.fytxt.compose.observe
 import kotlin.system.measureTimeMillis
+import android.widget.LinearLayout as ViewLinearLayout
 import com.highcapable.hikage.core.runtime.mutableStateOf as hikageStateOf
 
 class Demo : ComponentActivity() {
@@ -28,11 +29,11 @@ class Demo : ComponentActivity() {
 	override fun onCreate(savedInstanceState: Bundle?) = super.onCreate(savedInstanceState).also {
 		Hikageable(this) {
 			LinearLayout(
-				lparams = LayoutParams(matchParent = true), init = { orientation = LinearLayout.VERTICAL }) {
+				lparams = LayoutParams(matchParent = true), init = { orientation = ViewLinearLayout.VERTICAL }) {
 				val nativeResult = hikageStateOf("Native: Waiting...")
 				val fytxtResult = hikageStateOf("FYTxt: Waiting...")
 				LinearLayout(lparams = LayoutParams(widthMatchParent = true, height = 0) { weight = 1f }, init = {
-					orientation = LinearLayout.VERTICAL
+					orientation = ViewLinearLayout.VERTICAL
 					gravity = Gravity.CENTER
 				}) {
 					TextView {
