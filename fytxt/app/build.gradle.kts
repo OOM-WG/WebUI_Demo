@@ -19,9 +19,7 @@ fytxt {
 }
 
 compose.resources {
-	publicResClass = true
 	packageOfResClass = "dev.oom_wg.demo.generated.resources"
-	generateResClass = auto
 }
 
 kotlin {
