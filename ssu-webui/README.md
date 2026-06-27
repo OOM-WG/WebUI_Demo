@@ -1,4 +1,4 @@
-# [ShiroSU WebUI](https://oom-wg.dev/ssu/dev/man/webui)
+# [ShiroSU WebUI](https://oom-wg.dev/ssu/compat/dev/webui)
 
 ShiroSU 的 WebUI 标准与 KerenlSU 保持一致，详细规范请参考 [**KerenlSU 规范**](https://kernelsu.org/zh_CN/guide/module-webui.html)
 
@@ -19,11 +19,11 @@ ShiroSU 的 WebUI 标准与 KerenlSU 保持一致，详细规范请参考 [**Ker
 
 ## 开发与构建
 
-本项目基于 [Vue 3](https://vuejs.org/) + [TypeScript](https://www.typescriptlang.org/) + [Vite](https://vitejs.dev/) 开发，
+本项目基于 [Vue 3](https://vuejs.org/) + [TypeScript](https://www.typescriptlang.org/) + [Vite+](https://viteplus.dev/) 开发，
 集成了 [KernelSU](https://www.npmjs.com/package/kernelsu) 包，便于快速开发和打包
 
 ## 快速开始
 
-1. 安装依赖: `pnpm install`
-2. 启动开发服务器: `pnpm dev`
-3. 构建生产包 (产物会输出到 `dist`): `pnpm build`
+1. 安装依赖: `bun ci`
+2. 启动开发服务器: `bun dev`
+3. 构建生产包 (产物会输出到 `dist`): `bun run build`
