@@ -20,15 +20,15 @@
 		"@vue/compiler-sfc": "^3.5.39",
 		"@vue/tsconfig": "^0.9.1",
 		"autoprefixer": "^10.5.2",
-		"postcss": "^8.5.15",
+		"postcss": "^8.5.16",
 		"postcss-html": "^1.8.1",
 		"stylelint": "^17.14.0",
 		"stylelint-config-standard": "^40.0.0",
 		"stylelint-config-standard-vue": "^1.0.0",
 		"stylelint-plugin-defensive-css": "^2.9.3",
 		"stylelint-plugin-logical-css": "^2.1.0",
-		"typescript": "~6.0.3",
-		"vite-plus": "^0.2.1",
-		"vue-tsc": "^3.3.5"
+		"typescript": "^7.0.2",
+		"vite-plus": "^0.2.4",
+		"vue-tsc": "^3.3.7"
 	}
 }
