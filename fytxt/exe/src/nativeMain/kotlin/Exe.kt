@@ -1,5 +1,5 @@
-import dev.oom_wg.purejoy.fyl.fytxt.*
 import kotlinx.coroutines.runBlocking
+import tf.gal.shirosu.fyl.fytxt.*
 
 fun main(args: Array<String>) = runBlocking {
 	FYTxtConfig.updateGroup(FYTxtGroups.Common)

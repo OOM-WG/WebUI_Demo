@@ -5,7 +5,7 @@ plugins {
 	kotlin("plugin.compose")
 	id("org.jetbrains.compose")
 
-	id("dev.oom-wg.purejoy.fyl.fytxt")
+	id("ren.shiror.fyl.fytxt")
 }
 
 fytxt {

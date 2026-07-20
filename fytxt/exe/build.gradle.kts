@@ -1,7 +1,7 @@
 plugins {
 	kotlin("multiplatform")
 
-	id("dev.oom-wg.purejoy.fyl.fytxt")
+	id("ren.shiror.fyl.fytxt")
 }
 
 fytxt {

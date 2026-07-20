@@ -7,3 +7,4 @@
 -keep class android.widget.** { *; }
 -keep class android.view.** { *; }
 -dontwarn java.lang.reflect.AnnotatedType
+-dontwarn com.highcapable.hikage.**

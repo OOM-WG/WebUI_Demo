@@ -7,8 +7,8 @@ import androidx.compose.ui.ExperimentalComposeUiApi
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.window.ComposeViewport
-import dev.oom_wg.purejoy.fyl.fytxt.*
-import dev.oom_wg.purejoy.fyl.fytxt.compose.FYTxtProvider
+import tf.gal.shirosu.fyl.fytxt.*
+import tf.gal.shirosu.fyl.fytxt.compose.FYTxtProvider
 import top.yukonga.miuix.kmp.basic.*
 import top.yukonga.miuix.kmp.extra.SuperDropdown
 import top.yukonga.miuix.kmp.extra.SuperSwitch

@@ -7,8 +7,9 @@ plugins {
 	kotlin("plugin.compose")
 
 	id("org.lsposed.lsplugin.resopt") version "+"
+	id("com.highcapable.hikage") version "+"
 
-	id("dev.oom-wg.purejoy.fyl.fytxt")
+	id("ren.shiror.fyl.fytxt")
 }
 
 fytxt {
@@ -66,6 +67,8 @@ dependencies {
 	implementation("androidx.compose.material3:material3")
 	implementation("androidx.activity:activity-compose:+")
 
-	implementation("com.highcapable.hikage:hikage-core:+")
-	implementation("com.highcapable.hikage:hikage-extension-compose:+")
+	implementation(platform("com.highcapable.hikage:hikage-bom:+"))
+	implementation("com.highcapable.hikage:hikage-core")
+	implementation("com.highcapable.hikage:hikage-runtime")
+	implementation("com.highcapable.hikage:hikage-extension-compose")
 }

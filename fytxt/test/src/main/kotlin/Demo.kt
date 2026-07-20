@@ -13,21 +13,23 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.sp
-import com.highcapable.hikage.core.base.Hikageable
-import com.highcapable.hikage.core.runtime.setState
+import com.highcapable.hikage.core.base.Hikagable
+import com.highcapable.hikage.core.layout.LayoutParams
 import com.highcapable.hikage.extension.androidx.compose.ComposeView
+import com.highcapable.hikage.runtime.setState
 import com.highcapable.hikage.widget.android.widget.*
-import dev.oom_wg.purejoy.fyl.fytxt.*
-import dev.oom_wg.purejoy.fyl.fytxt.compose.FYTxtProvider
-import dev.oom_wg.purejoy.fyl.fytxt.compose.observe
+import tf.gal.shirosu.fyl.fytxt.FYTxt
+import tf.gal.shirosu.fyl.fytxt.FYTxtConfig
+import tf.gal.shirosu.fyl.fytxt.compose.FYTxtProvider
+import tf.gal.shirosu.fyl.fytxt.compose.observe
 import kotlin.system.measureTimeMillis
 import android.widget.LinearLayout as ViewLinearLayout
-import com.highcapable.hikage.core.runtime.mutableStateOf as hikageStateOf
+import com.highcapable.hikage.runtime.mutableStateOf as hikageStateOf
 
 class Demo : ComponentActivity() {
 	@SuppressLint("SetTextI18n")
 	override fun onCreate(savedInstanceState: Bundle?) = super.onCreate(savedInstanceState).also {
-		Hikageable(this) {
+		Hikagable(this) {
 			LinearLayout(
 				lparams = LayoutParams(matchParent = true), init = { orientation = ViewLinearLayout.VERTICAL }) {
 				val nativeResult = hikageStateOf("Native: Waiting...")
@@ -47,10 +49,10 @@ class Demo : ComponentActivity() {
 					Button {
 						text = "Run"
 						setOnClickListener {
-							repeat(1000) { FYTxt.Text; getString(R.string.text) }
+							repeat(1000) { FYTxt.Text; stringResource(R.string.text) }
 							var ignore = 0L
 							val nativeTime = measureTimeMillis {
-								repeat(100_0000) { ignore += getString(R.string.text).length }
+								repeat(100_0000) { ignore += stringResource(R.string.text).length }
 							}
 							nativeResult.value = "Native: ${nativeTime}ms"
 							val fytxtTime = measureTimeMillis {
